@@ -8,6 +8,7 @@ services:
     ports:
       - "5000:80"
   nginx:
-    image: nginx:apline
+    image: nginx:alpine
     restart: on-failure
-    ports: -"4000:80"
+    ports:
+      - "4000:80"
